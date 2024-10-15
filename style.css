@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+    font-family: "Jost", sans-serif;
+    font-style: normal;
+    color: #FFFFFF;
+    font-size: 30px;
+    line-height: 48px;
+}
+
+a {
+    text-decoration: none;
+    color: currentColor;
+}
+
+.header {
+    background-color: #141024;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 100px;
+}
+
+.logo {
+    font-weight: 700;
+}
+
+.menu-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-item {
+    display: inline;
+    padding-right: 40px;
+}
+
+.menu-item:last-child {
+    padding-right: 0;
+}
+
+.menu-link {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+}
+
+.phone-number {
+    font-weight: 600;
+}
