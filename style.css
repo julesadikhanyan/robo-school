@@ -11,7 +11,7 @@ a {
     color: currentColor;
 }
 
-h1, p {
+h1, h2, p {
     margin: 0;
 }
 
@@ -28,6 +28,18 @@ ul {
     padding: 0;
 }
 
+section {
+    margin-bottom: 120px;
+}
+
+.grid {
+    max-width: 1160px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 40px;
+}
+
 .header {
     display: flex;
     justify-content: space-between;
@@ -42,7 +54,7 @@ ul {
     font-weight: 700;
 }
 
-.logo, .phone-number {
+.logo, .phone-number, .about-title {
     font-size: 30px;
     line-height: 48px;
 }
@@ -65,13 +77,6 @@ ul {
     font-weight: 600;
 }
 
-.hero-section {
-    padding: 0 380px;
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    gap: 40px;
-}
-
 .hero-info {
     padding-top: 236px;
     grid-column: span 6;
@@ -84,10 +89,11 @@ ul {
     padding-bottom: 20px;
 }
 
-.hero-desription {
+.hero-description {
     font-size: 20px;
     line-height: 32px;
     padding-bottom: 50px;
+    max-width: 478px;
 }
 
 .hero-button {
@@ -103,4 +109,37 @@ ul {
     padding-top: 54px;
     grid-column: span 6;
     line-height: 0;
+    margin-left: -56px;
+}
+
+.about-section {
+    color: #141024;
+}
+
+.about-title {
+    grid-column: span 9;
+    font-weight: 600;
+    padding-bottom: 60px;
+}
+
+.about-list {
+    grid-column: span 12;
+}
+
+.about-item {
+    grid-column: span 3;
+}
+
+.about-item__title {
+    display: block;
+    font-weight: 600;
+    font-size: 70px;
+    line-height: 112px;
+    color: #D52027;
+}
+
+.about-item__description {
+    font-size: 18px;
+    line-height: 29px;
+    color: #141024B2;
 }
