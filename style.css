@@ -3,8 +3,7 @@ body {
     font-family: "Jost", sans-serif;
     font-style: normal;
     color: #FFFFFF;
-    font-size: 30px;
-    line-height: 48px;
+    font-weight: 400;
 }
 
 a {
@@ -12,21 +11,40 @@ a {
     color: currentColor;
 }
 
+h1, p {
+    margin: 0;
+}
+
+button {
+    font-family: inherit;
+    color: currentColor;
+    border: none;
+    padding: 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
 .header {
-    background-color: #141024;
     display: flex;
     justify-content: space-between;
     padding: 30px 100px;
+}
+
+.header, .hero-section {
+    background-color: #141024;
 }
 
 .logo {
     font-weight: 700;
 }
 
-.menu-list {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+.logo, .phone-number {
+    font-size: 30px;
+    line-height: 48px;
 }
 
 .menu-item {
@@ -39,11 +57,50 @@ a {
 }
 
 .menu-link {
-    font-weight: 400;
     font-size: 20px;
     line-height: 32px;
 }
 
 .phone-number {
     font-weight: 600;
+}
+
+.hero-section {
+    padding: 0 380px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 40px;
+}
+
+.hero-info {
+    padding-top: 236px;
+    grid-column: span 6;
+}
+
+.hero-title {
+    font-weight: 600;
+    font-size: 70px;
+    line-height: 112px;
+    padding-bottom: 20px;
+}
+
+.hero-desription {
+    font-size: 20px;
+    line-height: 32px;
+    padding-bottom: 50px;
+}
+
+.hero-button {
+    background-color: #D52027;
+    width: 260px;
+    height: 79px;
+    border-radius: 5px;
+    font-size: 18px;
+    line-height: 29px;
+}
+
+.hero-image {
+    padding-top: 54px;
+    grid-column: span 6;
+    line-height: 0;
 }
