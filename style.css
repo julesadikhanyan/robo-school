@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    font-family: "Jost", sans-serif;
+    font-family: "Jost", "Arial", sans-serif;
     font-style: normal;
     color: #FFFFFF;
     font-weight: 400;
@@ -11,8 +11,12 @@ a {
     color: currentColor;
 }
 
-h1, h2, p {
+h1, h2, h3, p {
     margin: 0;
+}
+
+h1, h2, h3 {
+    font-weight: 600;
 }
 
 button {
@@ -26,10 +30,6 @@ ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-}
-
-section {
-    margin-bottom: 120px;
 }
 
 .grid {
@@ -77,13 +77,16 @@ section {
     font-weight: 600;
 }
 
+.hero-section, .benefit-section {
+    margin-bottom: 120px;
+}
+
 .hero-info {
     padding-top: 236px;
     grid-column: span 6;
 }
 
 .hero-title {
-    font-weight: 600;
     font-size: 70px;
     line-height: 112px;
     padding-bottom: 20px;
@@ -112,17 +115,20 @@ section {
     margin-left: -56px;
 }
 
-.about-section {
+.about-section, .benefit-section {
     color: #141024;
+}
+
+.about-section {
+    margin-bottom: 100px;
 }
 
 .about-title {
     grid-column: span 9;
-    font-weight: 600;
     padding-bottom: 60px;
 }
 
-.about-list {
+.about-list, .benefit-list {
     grid-column: span 12;
 }
 
@@ -138,8 +144,35 @@ section {
     color: #D52027;
 }
 
-.about-item__description {
+.about-item__description, .benefit-item__description {
     font-size: 18px;
     line-height: 29px;
     color: #141024B2;
+}
+
+.benefit-section {
+    background-color: #F9F9F9;
+    padding: 100px 0;
+}
+
+.benefit-title {
+    grid-column: span 12;
+    font-size: 50px;
+    line-height: 80px;
+    padding-bottom: 60px;
+}
+
+.benefit-item {
+    grid-column: span 4;
+}
+
+.benefit-item__title {
+    font-size: 24px;
+    line-height: 38px;
+    padding-bottom: 20px;
+}
+
+#add-info::after {
+    content: url("/info-icon.svg");
+    margin-left: 10px;
 }
