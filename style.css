@@ -38,6 +38,7 @@ ul {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     column-gap: 40px;
+    width: 100%;
 }
 
 .header {
@@ -77,7 +78,7 @@ ul {
     font-weight: 600;
 }
 
-.hero-section, .benefit-section, .trainers-section {
+.hero-section, .benefit-section, .trainers-section, .price-section {
     margin-bottom: 120px;
 }
 
@@ -100,9 +101,12 @@ ul {
 }
 
 .hero-button {
-    background-color: #D52027;
     width: 260px;
     height: 79px;
+}
+
+.hero-button, .price-item__button {
+    background-color: #D52027;
     border-radius: 5px;
     font-size: 18px;
     line-height: 29px;
@@ -115,7 +119,7 @@ ul {
     margin-left: -56px;
 }
 
-.about-section, .benefit-section, .trainers-section {
+.about-section, .benefit-section, .trainers-section, .price-section {
     color: #141024;
 }
 
@@ -128,7 +132,7 @@ ul {
     padding-bottom: 60px;
 }
 
-.about-list, .benefit-list, .trainers-list {
+.about-list, .benefit-list, .trainers-list, .price-list {
     grid-column: span 12;
 }
 
@@ -144,7 +148,7 @@ ul {
     color: #D52027;
 }
 
-.about-item__description, .benefit-item__description, .trainers-item__description {
+.about-item__description, .benefit-item__description, .trainers-item__description, .price-item__description {
     font-size: 18px;
     line-height: 29px;
     color: #141024B2;
@@ -155,14 +159,14 @@ ul {
     padding: 100px 0;
 }
 
-.benefit-title, .trainers-title {
+.benefit-title, .trainers-title, .price-title {
     grid-column: span 12;
     font-size: 50px;
     line-height: 80px;
     padding-bottom: 60px;
 }
 
-.benefit-item, .trainers-item {
+.benefit-item, .trainers-item, .price-item {
     grid-column: span 4;
 }
 
@@ -232,4 +236,68 @@ ul {
     background: none;
     font-size: 0;
     margin-right: 10px;
+}
+
+.price-list {
+    height: 500px;
+}
+
+.price-item {
+    border-radius: 20px;
+}
+
+.price-item.active {
+    background-color: #141024;
+    color: #FFFFFF;
+    padding: 40px;
+}
+
+.price-item.inactive {
+    border: 1px solid #14102433;
+    padding: 39px;
+    margin: 20px 0;
+}
+
+.price-item__title {
+    font-size: 30px;
+    line-height: 48px;
+    text-align: center;
+}
+
+.price-item__title.active {
+    padding-bottom: 83px;
+}
+
+.price-item__title.inactive {
+    padding-bottom: 63px;
+}
+
+.price-item__value {
+    font-size: 50px;
+    line-height: 80px;
+    font-weight: 600;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.price-item__description {
+    color: currentColor;
+    text-align: center;
+}
+
+.price-item__description.active {
+    padding-bottom: 52px;
+}
+
+.price-item__description.inactive {
+    padding-bottom: 61px;
+}
+
+.price-item__button {
+    width: 280px;
+    height: 79px;
+}
+
+.price-item__button.inactive {
+    color: #FFFFFF;
 }
