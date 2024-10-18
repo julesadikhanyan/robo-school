@@ -239,7 +239,7 @@ ul {
 }
 
 .price-list {
-    height: 500px;
+    min-height: 460px;
 }
 
 .price-item {
@@ -300,4 +300,64 @@ ul {
 
 .price-item__button.inactive {
     color: #FFFFFF;
+}
+
+.form-section {
+    background-color: #D52027;
+    background-image: url(img/form-bg-image.svg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.form-grid {
+    padding: 87px 60px;
+    box-sizing: border-box;
+}
+
+.form-info, .form-container {
+    grid-column: span 6;
+}
+
+.form-info {
+    padding-top: 19px;
+}
+
+.form-info__title {
+    font-size: 36px;
+    line-height: 47px;
+    padding-bottom: 20px;
+}
+
+.form-info__description {
+    font-size: 20px;
+    line-height: 26px;
+}
+
+.form-input {
+    display: block;
+    width: 100%;
+    min-height: 64px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-family: inherit;
+    font-size: 18px;
+    line-height: 26px;
+    color: #282944B2;
+    padding: 19px 20px;
+    box-sizing: border-box;
+}
+
+.form-input:focus {
+    outline: none;
+}
+
+.form-button {
+    width: 100%;
+    min-height: 64px;
+    background-color: #141024;
+    border-radius: 5px;
+    font-size: 18px;
+    line-height: 26px;
 }
