@@ -42,12 +42,15 @@ ul {
 }
 
 .header {
-    display: flex;
-    justify-content: space-between;
     padding: 30px 100px;
 }
 
-.header, .hero-section {
+.header, .footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header, .hero-section, .footer {
     background-color: #141024;
 }
 
@@ -360,4 +363,19 @@ ul {
     border-radius: 5px;
     font-size: 18px;
     line-height: 26px;
+}
+
+.footer {
+    padding: 40px 100px;
+}
+
+.footer-left {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-left span {
+    font-size: 16px;
+    line-height: 26px;
+    color: #FFFFFFB2;
 }
